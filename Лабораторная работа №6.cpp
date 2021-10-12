@@ -5,19 +5,29 @@ void tasks(int N) {
 		cout << "Задание №1\n" << "Введите A и B через пробел и нажмите Enter: ";
 		double A, B;
 		cin >> A >> B;
-		cout << "A = " << B << ", " << "B = " << A << endl;
+		double tmp = A;
+		A = B;
+		B = tmp;
+		cout << "A = " << A << ", " << "B = " << B << endl;
 	}
 	else if (N == 2) {
 		cout << "Задание №2\n" << "Введите A, B и C через пробел и нажмите Enter: ";
 		double A, B, C;
 		cin >> A >> B >> C;
-		cout << "A = " << C << ", " << "B = " << A << ", " << "C = " << B << endl;
+		double tmp = A;
+		A = C;
+		C = B;
+		B = tmp;
+		cout << "A = " << A << ", " << "B = " << B << ", " << "C = " << C << endl;
 	}
 	else if (N == 3) {
 		cout << "Задание №3\n" << "Введите A, B и C через пробел и нажмите Enter: ";
 		double A, B, C;
 		cin >> A >> B >> C;
-		A, B, C = B, C, A;
+		double tmp = B;
+		B = C;
+		C = A;
+		A = tmp;
 		cout << "A = " << A << ", " << "B = " << B << ", " << "C = " << C << endl;
 	}
 	else if (N == 4) {
