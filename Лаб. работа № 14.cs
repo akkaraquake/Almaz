@@ -4,7 +4,7 @@ namespace Лаб._работа___14
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Введите номер задания: ");
             int n, otv;
