@@ -6,7 +6,14 @@ namespace Лаб._работа___14
     {
         static void Main(string[] args)
         {
-            tasks(4);
+            Console.WriteLine("Введите номер задания: ");
+            int n, otv;
+            n = int.Parse(Console.ReadLine());
+            tasks(n);
+            Console.WriteLine("Если хотите продолжить нажмите 1, иначе 0: ");
+            otv = int.Parse(Console.ReadLine());
+            if (otv == 1)
+                Main();
         }
 
         static void tasks(int n)
